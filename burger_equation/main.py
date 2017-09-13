@@ -8,7 +8,7 @@ execfile("plotting.py")
 if __name__ == "__main__":
 	# function that creates constants needed to initialise model.
 	# put in number of x points, change in time and total number of timesteps.	
-	nx,dt,dx,total_nt,x = initial_constants(200,0.0005,100)
+	nx,dt,dx,total_nt,x = initial_constants(200,0.0005,1000)
 	initial_phi_curve = initial_curve(x)
 	initial_phi_square = initial_square(x)
 	

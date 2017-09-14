@@ -1,7 +1,7 @@
 import numpy as np
 
 def quad_wrong(a,b,c):
-	return (-b+np.sqrt(b**2.0 - 4.*a*c)/(2*a), -b-np.sqrt(b**2.0 - 4.*a*c)/(2*a))
+	return ((-b+np.sqrt(b**2.0 - 4.*a*c))/(2*a), (-b-np.sqrt(b**2.0 - 4.*a*c))/(2*a))
 
 def quad_correct(a,b,c):
 	return ((-b+np.sqrt(b**2.0 - 4.*a*c))/(2*a), (-b-np.sqrt(b**2.0 - 4.*a*c))/(2*a))

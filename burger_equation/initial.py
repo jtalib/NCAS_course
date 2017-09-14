@@ -4,10 +4,10 @@ import matplotlib.pyplot as plt
 
 # function defining a sqaure
 def initial_square(x):
-	return np.where((x%1. > 0.25) & (x%1. < 0.75),1,0)
+	return np.where((x%1. > 0.25) & (x%1. < 0.75),1.,0.)
 	
 def initial_curve(x):
-    return np.where((x%1. > 0.25) & (x%1. < 0.75),np.power(np.sin(2*x*np.pi+(np.pi/2.)),2),0)
+    return np.where((x%1. > 0.25) & (x%1. < 0.75),np.power(np.sin(2.*x*np.pi+(np.pi/2.)),2.),0.)
 
 def initial_constants(nx,dt,total_nt):
     dx = 1./nx
